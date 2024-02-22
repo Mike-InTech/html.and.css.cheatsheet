@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML & CSS Cheat Sheet</title>
+    <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!--HTML section-->
+    <h1 id="section">HTML</h1>
+    
+    <h2 id="tableTitle">Basic Tags</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="tableHeader" scope="col">Tag</th>
+          <th class="tableHeader" scope="col">Name</th>
+          <th class="tableHeader" scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="tag">< body ></span>
+          </td>
+          <td>
+            <span class="name">Body</span>
+          </td>
+          <td class="description">Content of the document (parent)</td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< p ></span>
+            </td>
+            <td>
+                <span class="name">Paragraph</span>
+            </td>
+            <td class="description">A basic paragraph</td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< div ></span>
+            </td>
+            <td>
+                <span class="name">Division</span>
+            </td>
+            <td class="description">Generic container for flow content, for grouping (does nothing itself)</td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< h1 ></span>
+            </td>
+            <td>
+                <span class="name">Heading</span>
+            </td>
+            <td>
+                <span class="description">
+                    Type of headings; < h1 > through < h6 >
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< span ></span>
+            </td>
+            <td>
+                <span class="name">Content Span</span>
+            </td>
+            <td>
+                <span class="description">
+                    Create container for inline texts
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< em ></span>
+            </td>
+            <td>
+                <span class="name">Emphasis</span>
+            </td>
+            <td>
+                <span class="description">
+                    Makes texts italic
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< strong ></span>
+            </td>
+            <td>
+                <span class="name">Strong Importance</span>
+            </td>
+            <td>
+                <span class="description">
+                    Makes texts bold
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< br ></span>
+            </td>
+            <td>
+                <span class="name">Line Break</span>
+            </td>
+            <td>
+                <span class="description">
+                    Creates a line break
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< ul ></span>
+            </td>
+            <td>
+                <span class="name">Unordered List</span>
+            </td>
+            <td>
+                <span class="description">
+                    Creates an unordered list
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< ol ></span>
+            </td>
+            <td>
+                <span class="name">Ordered List</span>
+            </td>
+            <td>
+                <span class="description">
+                    Creates an ordered list which is numbered
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< img ></span>
+            </td>
+            <td>
+                <span class="name">Image</span>
+            </td>
+            <td>
+                <span class="description">
+                    Adds images, is self closing (only needs one tag)
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< video ></span>
+            </td>
+            <td>
+                <span class="name">Video</span>
+            </td>
+            <td>
+                <span class="description">
+                    Adds videos, needs to have width and height (also add 'controls')
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< audio ></span>
+            </td>
+            <td>
+                <span class="name">Audio</span>
+            </td>
+            <td>
+                <span class="description">
+                    Adds audio (must include < source > element)
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< a ></span>
+            </td>
+            <td>
+                <span class="name">Anchor</span>
+            </td>
+            <td>
+                <span class="description">
+                    Together with href(attribute), creates a hyperlink to a webpage (URL)
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< header ></span>
+            </td>
+            <td>
+                <span class="name">Header</span>
+            </td>
+            <td>
+                <span class="description">
+                    A container usually for navigation links or headings
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< nav ></span>
+            </td>
+            <td>
+                <span class="name">Nav. Section</span>
+            </td>
+            <td>
+                <span class="description">
+                    Used to define navigation links (menus/table of contents)
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< main ></span>
+            </td>
+            <td>
+                <span class="name">Main</span>
+            </td>
+            <td>
+                <span class="description">
+                    Main content of webpage (excludes < footer > & < nav >)
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< footer ></span>
+            </td>
+            <td>
+                <span class="name">Footer</span>
+            </td>
+            <td>
+                <span class="description">
+                    The footer of the page
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< section ></span>
+            </td>
+            <td>
+                <span class="name">Section</span>
+            </td>
+            <td>
+                <span class="description">
+                    Chapters, headings, etc
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< article ></span>
+            </td>
+            <td>
+                <span class="name">Article</span>
+            </td>
+            <td>
+                <span class="description">
+                    Artcles, blogs, comments, magazines, etc
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< aside ></span>
+            </td>
+            <td>
+                <span class="name">Aside</span>
+            </td>
+            <td>
+                <span class="description">
+                    Additional info (bibliographies, end notes, comments, pull notes, etc...)
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< figure ></span>
+            </td>
+            <td>
+                <span class="name">Figure</span>
+            </td>
+            <td>
+                <span class="description">
+                    Images, diagrams, code snippets, etc    
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< figcaption ></span>
+            </td>
+            <td>
+                <span class="name">Figure Caption</span>
+            </td>
+            <td>
+                <span class="description">
+                    Adds captions or description to image or media
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< embed ></span>
+            </td>
+            <td>
+                <span class="name">Embed</span>
+            </td>
+            <td>
+                <span class="description">
+                    Any media type (self closing .../>)
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="tag">< style ></span>
+            </td>
+            <td>
+                <span class="name">Style</span>
+            </td>
+            <td>
+                <span class="description">
+                    Allows you to a section to write CSS code (aka CSS mode)
+                </span>
+            </td>
+        </tr>
+
+      </tbody>
+    </table>
+    
+    <!--  2nd Table-->
+    <h2 id="tableTitle2">Table Tags</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="tableHeader" scope="col">Tag</th>
+                <th class="tableHeader" scope="col">Name</th>
+                <th class="tableHeader" colspan="2" scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span class="tag">< table ></span>
+                </td>
+                <td>
+                    <span class="name">Table</span>
+                </td>
+                <td>
+                    <span class="description">
+                        Creates a table to display/store data
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="tag">< tr ></span>
+                </td>
+                <td>
+                    <span class="name">Table Row</span>
+                </td>
+                <td>
+                    <span class="description">
+                        Creates a row in a table
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="tag">< td ></span>
+                </td>
+                <td>
+                    <span class="name">Table Data</span>
+                </td>
+                <td>
+                    <span class="description">
+                        Creates table data (each cell element needs to be defined)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="tag">< th ></span>
+                </td>
+                <td>
+                    <span class="name">Table Heading</span>
+                </td>
+                <td>
+                    <span class="description">
+                        Creates table heading (title)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="tag">< tbody ></span>
+                </td>
+                <td>
+                    <span class="name">Table Body</span>
+                </td>
+                <td>
+                    <span class="description">
+                        Contains all the table data (exluding < thead >)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="tag">< thead ></span>
+                </td>
+                <td>
+                    <span class="name">Table Heading</span>
+                </td>
+                <td>
+                    <span class="description">
+                        The table headings for the whole table (ONLY COLUMNS)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="tag">< tfoot ></span>
+                </td>
+                <td>
+                    <span class="name">Table Footer</span>
+                </td>
+                <td>
+                    <span class="description">
+                        Footer of the table
+                    </span>
+                </td>
+            </tr>
+            
+        </tbody>
+        
+    </table>
+
+    <!--3rd Table-->
+    <h2 id="tableTitle3">Attributes for HTML</h2>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="tableHeader" scope="col">Attribute</th>
+                <th class="tableHeader" scope="col">Name</th>
+                <th class="tableHeader" colspan="2" scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span class="attribute">
+                        id
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeName">
+                        ID
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeDescription">
+                        It's commonly used to name < div > tags
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="attribute">
+                        alt
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeName">
+                        Alternative Text
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeDescription">
+                        It's used for alternative text like a description
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="attribute">
+                        class
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeName">
+                        Class
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeDescription">
+                        Similar to id, its for classification purposes
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="attribute">
+                        target
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeName">
+                        Target
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeDescription">
+                        Specifies how a link should open (like a new tab or window)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="attribute">
+                        href
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeName">
+                        Href
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeDescription">
+                        It creates links that require a URL or link to other page
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="attribute">
+                        colspan
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeName">
+                        Column Span
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeDescription">
+                        It allows data to span multiple columns
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="attribute">
+                        rowspan
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeName">
+                        Row Span
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeDescription">
+                        It allows data to span multiple rows
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="attribute">
+                        autoplay
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeName">
+                        Auto Play
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeDescription">
+                        It automatically plays the video when the webpage loads
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="attribute">
+                        controls
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeName">
+                        Controls
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeDescription">
+                        It displays controls for audio or video
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="attribute">
+                        src
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeName">
+                        Source
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeDescription">
+                        It specifies a source from an external source (URL)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="attribute">
+                        loop
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeName">
+                        Loop
+                    </span>
+                </td>
+                <td>
+                    <span class="attributeDescription">
+                        It loops the video or audio
+                    </span>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <!--CSS section-->
+    <h1 id="section">CSS</h1>
+
+    <!--Table 4-->
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="tableHeader" scope="col">Property</th>
+                <th class="tableHeader" scope="col">Name</th>
+                <th class="tableHeader" scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span class="property">
+                        border
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Border
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Changes the border of an element
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        border-radius
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Border Radius
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Rounds the edges of the border
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        padding
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Padding
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Changes the space between the border and content (padding: top right bottom left)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        overflow
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Overflow
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Controls what happens to content that spills out of its box
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Visibility
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Can be set to hidden, visible(default), or collapse
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        position
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Position
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Can be be static(default), relative, absolute, fixed, or sticky. Needs to be followed by; top, bottom, left, or right.
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        z-index
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Z-Index
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Controls how far back(or forward) an element should appear. Accepts integers(numbers).
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        display
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Display
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Displays an element inline, inline-block, and block(default)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        float
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Float
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Text wrapping around an image (left or right)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        clear
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Clear
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        It tells how elements behave when they bump into each other (left, right, both, or none)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        hsl
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        HSL
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Hue, saturation, and lighting
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        hsla
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        HSLA
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Hue, saturation, lighting, and alpha(opacity)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        font-weight
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Font Weight
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Can use bold, normal(default), lighter, bolder, or a number(between 1-1000)
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        font-style
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Font Style
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Can make text italic
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        text-transform
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Text Transform
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Can make text uppercase, lowercase, or capitalized
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        letter-spacing
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Letter Spacing
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Can put space between letters
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="property">
+                        word-spacing
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyName">
+                        Word Spacing
+                    </span>
+                </td>
+                <td>
+                    <span class="propertyDescription">
+                        Can put space between words
+                    </span>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+  </body>
+</html>
